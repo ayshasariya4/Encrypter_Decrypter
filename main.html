@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ENCRYPTION/DECRYPTION ALGORITHMS</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Add any CSS stylesheets or additional meta tags as needed -->
+</head>
+
+<body>
+    <div class="contact-us">
+        <form>
+            <h2>ENCRYPTION/DECRYPTION ALGORITHMS</h2>
+            <label for="algorithm">Select Algorithm:</label>
+            <select id="algorithm">
+          <option value="caesar">Caesar Cipher</option>
+          <option value="vigenere">Vigenère Cipher</option>
+          <option value="playfair">Playfair Cipher</option>
+          <option value="railfence">Rail Fence Cipher</option></select
+        ><br />
+        <label for="message">Enter Message:</label><br />
+        <textarea id="message" rows="4" cols="50"></textarea><br />
+        <label for="key">Enter Key:</label>
+        <input type="text" id="key" /><br />
+        <button id="encryptButton">Encrypt</button>
+        <button id="decryptButton">Decrypt</button>
+        <button id="resetButton">Reset</button>
+        <p>Result:</p>
+        <textarea id="result" rows="4" cols="50" readonly></textarea>
+      </form>
+    </div>
+    <script src="script.js"></script>
+    <!-- Add any other content or elements for your webpage as needed -->
+  </body>
+</html>
